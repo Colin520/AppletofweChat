@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class='conter'>
+    <image src='/images/images.jpg' class='touxiang-img'></image>
+    <text class='greetings'><text class='textred'>hello</text>,杨锋</text>
+    <view class='button' bindtap='onTap'> 
+        <text class='button-text'>开起小程序之旅</text>
+    </view>
+</view>

@@ -1,0 +1,22 @@
+<!-- 先静后动，先样式再数据的原则 -->
+<view class='container'>
+    <image class='head-image' src='{{postData.headImgSrc}}'></image>
+    <image class='audio' src='/images/icon/music.png'></image>
+    <view class='author-date'>
+        <image class='avatar' src='{{postData.author_img}}'></image>
+        <text class='author'>{{postData.author}}</text>
+        <text class='const-text'>发表于</text>
+        <text class='date'>{{postData.dateTime}}</text>
+    </view>
+    <text class='title'>{{postData.title}}</text>
+    <view class='tool'>
+        <view class='circle-img'>
+            <image catchtap='onCollectionTap' src='/images/icon/sct1.png'></image>
+            <image catchtap='onShareTap' class='share-img' src='/images/icon/sct2.png'></image>
+        </view>
+        <!--水平直接-->
+        <view class='horizon'></view>
+    </view>
+    <!--文章的正文  -->
+    <text class='detail'>{{postData.detail}}</text>
+</view> 
